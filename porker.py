@@ -1,4 +1,5 @@
 import math
+import random
 
 tramp = [range(1,53)]
 
@@ -37,4 +38,7 @@ tramp3 = tramp2.pop(playernum1)
 playernum2 = random.sample(trump3,1)
 tramp4 = tramp3.pop(playernum2)
 
-
+print(cpunum1)
+print(cpunum2)
+print(playernum1)
+print(playernum2)
