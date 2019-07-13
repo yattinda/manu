@@ -24,6 +24,8 @@ class Card:
 #if 0 <= human and 3 >= human:
 #	print("OK")
 	
+#random.sampleはリストを返す
+
 #CPUのカードを選ぶ
 cpunum1 = random.sample(tramp,1)
 tramp1 = tramp.pop(cpunum1)
