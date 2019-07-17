@@ -1,10 +1,13 @@
 import math
 import random
 
-tramp = [range(1,53)]
+tramp = list(range(1,53))
 
+print(tramp)
+
+#マークの分類
 class trampnum():
-	def thirteen(self):
+	def __init__(self):
 		return (int(self) % 13) + 1
 
 class Card:
@@ -18,6 +21,8 @@ class Card:
 		if trumpnum == 13:
 			return "K"
 
+
+
 #にんずうせっていしたい
 #human = int(input("How many people?"))
 
@@ -27,20 +32,31 @@ class Card:
 #random.sampleはリストを返す
 
 #CPUのカードを選ぶ
-cpunum1 = random.sample(tramp,1)
-tramp1 = tramp.pop(cpunum1)
+cpunum1 = random.sample(tramp,2)
+tramp_AA = list(set(tramp) - set(cpunum1)) 
+#print(tramp_AA)
 
-cpunum2 = random.sample(trump1,1)
-tramp2 = tramp1.pop(cpunum2)
+cpunum2 = random.sample(tramp_AA,2)
+tramp_BB = list(set(tramp_AA) - set(cpunum2))
+#print(tramp_BB)
 
 #プレイヤーのカードを選ぶ
-playernum1 = random.sample(trump2,1)
-tramp3 = tramp2.pop(playernum1)
+playernum1 = random.sample(tramp_BB,2)
+tramp_CC = list(set(tramp_BB) - set(playernum1))
+#print(tramp_CC)
 
-playernum2 = random.sample(trump3,1)
-tramp4 = tramp3.pop(playernum2)
+playernum2 = random.sample(tramp_CC,2)
+tramp_DD = list(set(tramp_CC) - set(playernum2))
+#print(tramp_DD)
 
-print(cpunum1)
-print(cpunum2)
-print(playernum1)
-print(playernum2)
+#print(cpunum1)
+#print(cpunum2)
+#print(playernum1)
+#print(playernum2)
+
+stage1 = random.sample(tramp_DD,3)
+#ここまでで最初の場が整う
+
+
+
+
