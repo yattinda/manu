@@ -3,11 +3,12 @@ import random
 
 tramp = list(range(1,53))
 
-print(tramp)
+#print(tramp)
 
 #マークの分類
-class trampnum():
-	def __init__(self):
+class trampmake:
+	def __init__(self, num):
+		self.num = num
 		return (int(self) % 13) + 1
 
 class Card:
@@ -28,12 +29,12 @@ class Card:
 
 #if 0 <= human and 3 >= human:
 #	print("OK")
-	
+
 #random.sampleはリストを返す
 
-#CPUのカードを選ぶ
+#CPUのカードを選ぶ, この繰り返し改善できそう
 cpunum1 = random.sample(tramp,2)
-tramp_AA = list(set(tramp) - set(cpunum1)) 
+tramp_AA = list(set(tramp) - set(cpunum1))
 #print(tramp_AA)
 
 cpunum2 = random.sample(tramp_AA,2)
@@ -45,8 +46,9 @@ playernum1 = random.sample(tramp_BB,2)
 tramp_CC = list(set(tramp_BB) - set(playernum1))
 #print(tramp_CC)
 
-playernum2 = random.sample(tramp_CC,2)
-tramp_DD = list(set(tramp_CC) - set(playernum2))
+#二人のとき用
+#playernum2 = random.sample(tramp_CC,2)
+#tramp_DD = list(set(tramp_CC) - set(playernum2))
 #print(tramp_DD)
 
 #print(cpunum1)
@@ -54,9 +56,14 @@ tramp_DD = list(set(tramp_CC) - set(playernum2))
 #print(playernum1)
 #print(playernum2)
 
-stage1 = random.sample(tramp_DD,3)
+stage1 = random.sample(tramp_CC,3)
 #ここまでで最初の場が整う
+playernum1[0]
 
+playerhand_1 = trampmake(playernum1[0])
+playerhand_2 = trampmake(playernum2[1])
 
+print(playerhand_1)
+print(playerhand_2)
 
-
+print("your Hand is" + playerhand_1 + "," + playerhand_2)
