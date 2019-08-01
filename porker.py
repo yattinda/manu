@@ -6,11 +6,17 @@ tramp = list(range(1,53))
 #print(tramp)
 
 #マークの分類
-class trampmake:
-	def __init__(self, numnum):
-		self.num = numnum
-		return (int(self) % 13) + 1
+#class trampmake:
+#	def __init__(self, numnum):
+#		self.num = numnum
+#		return (int(self) % 13) + 1
 
+def division(apple):
+	banana = (int(apple) % 13) + 1
+	return banana
+
+
+#how to use
 class Card:
 	def __init__(self, name, number):
 		if trumpnum == 1:
@@ -60,10 +66,23 @@ stage1 = random.sample(tramp_CC,3)
 #ここまでで最初の場が整う
 playernum1[0]
 
-playerhand_1 = trampmake(int(playernum1[0]))
-playerhand_2 = trampmake(int(playernum2[1]))
+playerhand_1 = division(playernum1[0])
+playerhand_2 = division(playernum1[1])
+stage1_1 = division(stage1[0])
+stage1_2 = division(stage1[1])
+stage1_3 = division(stage1[2])
+cpunum1_1 = division(cpunum1[0])
+cpunum1_2 = division(cpunum1[1])
+cpunum2_1 = division(cpunum2[0])
+cpunum2_2 = division(cpunum2[1])
 
-print(playerhand_1.num)
-print(playerhand_2.num)
+#print(playerhand_1)
+#print(playerhand_2)
 
-print("your Hand is" + playerhand_1 + "," + playerhand_2)
+print("your Hand is " + str(playerhand_1) + "," + str(playerhand_2))
+
+print("table hand is " + str(stage1_1) + "," + str(stage1_2) + "," + str(stage1_3))
+
+
+def win:
+	if
