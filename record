@@ -1,0 +1,7 @@
+a,b=map(int,input().split())
+      take 2
+
+l = ['aaa', 'bbb', 'ccc']
+s = ','.join(l)
+print(s)
+# aaa,bbb,ccc

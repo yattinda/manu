@@ -11,9 +11,21 @@ tramp = list(range(1,53))
 #		self.num = numnum
 #		return (int(self) % 13) + 1
 
-def division(apple):
+def divisionnum(apple):
 	banana = (int(apple) % 13) + 1
+
 	return banana
+
+def divisionmark(melon):
+	orange = int(melon) // 13
+	if orange = 0:
+		return "♡"
+	elif orange = 1:
+		return "◇"
+	elif orange = 2:
+		return "♧"
+	else:
+		return "♧"
 
 
 #how to use
@@ -66,15 +78,15 @@ stage1 = random.sample(tramp_CC,3)
 #ここまでで最初の場が整う
 playernum1[0]
 
-playerhand_1 = division(playernum1[0])
-playerhand_2 = division(playernum1[1])
-stage1_1 = division(stage1[0])
-stage1_2 = division(stage1[1])
-stage1_3 = division(stage1[2])
-cpunum1_1 = division(cpunum1[0])
-cpunum1_2 = division(cpunum1[1])
-cpunum2_1 = division(cpunum2[0])
-cpunum2_2 = division(cpunum2[1])
+playerhand_1 = divisionnum(playernum1[0])
+playerhand_2 = divisionnum(playernum1[1])
+stage1_1 = divisionnum(stage1[0])
+stage1_2 = divisionnum(stage1[1])
+stage1_3 = divisionnum(stage1[2])
+cpunum1_1 = divisionnum(cpunum1[0])
+cpunum1_2 = divisionnum(cpunum1[1])
+cpunum2_1 = divisionnum(cpunum2[0])
+cpunum2_2 = divisionnum(cpunum2[1])
 
 #print(playerhand_1)
 #print(playerhand_2)
