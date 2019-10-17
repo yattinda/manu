@@ -5,3 +5,5 @@ l = ['aaa', 'bbb', 'ccc']
 s = ','.join(l)
 print(s)
 # aaa,bbb,ccc
+
+python3 -m pip install ::pip3 代替え
