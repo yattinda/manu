@@ -26,3 +26,6 @@ class putboard():
         else:
             self.cell[y][x] = player
             return True
+
+    def flipp (self , x, y, player):
+    
