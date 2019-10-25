@@ -14,7 +14,7 @@ class board():
         self.cell[3][4] = black
         self.cell[4][3] = black
 
-#print(*board().cell, sep= "\n")
+print(*board().cell, sep= "\n")
 
 class putboard():
 
@@ -28,4 +28,27 @@ class putboard():
             return True
 
     def flipp (self , x, y, player):
-    
+        precell = [(yy,xx) for y in tablesize for x in tablesize]
+        if yy == 0 and xx == 0:
+            continue
+
+        #print(xx,yy)
+
+        availlable = []
+        distance = 0
+
+       while(True):
+           distance += 1
+           disy = y +(yy * distance)
+           disx = x +(xx * distance)
+
+           if 0 <= disy <= tablesize  and  0<= disx <= tablesize:
+               correct = self.cell[disy][disx]
+            if correct == 0:
+                break
+
+            if correct == player:
+                if availlable != []:
+                    
+
+            #    fllip.append(availlable)
