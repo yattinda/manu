@@ -1,11 +1,13 @@
 import random
+from Modan import elements
+#change from
 
 
 
 for quiznum in range(1):
     #クイズと答えのファイル作成、枚数はrange()
-    quiz_file = open("quiz{}.txt".format(quiznum +1),"w")
-    answer_file = open("answer{}txt".format(quiznum +1),"w")
+    quiz_file = open("./quiz/quiz{}.txt".format(quiznum +1),"w")
+    answer_file = open("./answer/answer{}txt".format(quiznum +1),"w")
 
     quiz_file.write("\n\n")
 
