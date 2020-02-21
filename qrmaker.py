@@ -1,5 +1,7 @@
 import qrcode
 
-img = qrcode.make("https://yattinda.github.io/")
+#a = input("Plz URL:")
 
-img.save("myhome.png")
+img = qrcode.make(input("Plz URL:"))
+
+img.save("qrcode/URL.png")

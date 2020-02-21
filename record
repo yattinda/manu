@@ -7,5 +7,3 @@ print(s)
 # aaa,bbb,ccc
 
 sudo python3 -m pip install ::pip3 代替え
-
-a

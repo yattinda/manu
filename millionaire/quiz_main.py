@@ -1,10 +1,9 @@
+
 import random
-from Modan import elements
+#from yuki import elements
 #change from
 
-
-
-for quiznum in range(1):
+for quiznum in range(2):
     #クイズと答えのファイル作成、枚数はrange()
     quiz_file = open("./quiz/quiz{}.txt".format(quiznum +1),"w")
     answer_file = open("./answer/answer{}txt".format(quiznum +1),"w")
